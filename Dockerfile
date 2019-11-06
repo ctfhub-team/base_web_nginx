@@ -1,15 +1,13 @@
-FROM nginx:alpine
+FROM nginx:1.16.1-alpine
 
 LABEL Organization="CTFTraining" Author="Virink <virink@outlook.com>"
-
-MAINTAINER Virink@CTFTraining <virink@outlook.com>
-
-COPY src /var/www/html
 
 COPY _file /tmp/
 
 RUN mv /tmp/flag.sh /flag.sh \
     && mv /tmp/docker-entrypoint /usr/local/bin/docker-entrypoint \
+    && mkdir -p /var/www/html \
+    && cp /usr/share/nginx/html/*.html /var/www/html/ \
     && chmod +x /usr/local/bin/docker-entrypoint \
     && mv /tmp/nginx.conf /etc/nginx/nginx.conf
 
