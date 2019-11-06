@@ -9,7 +9,8 @@ RUN mv /tmp/flag.sh /flag.sh \
     && mkdir -p /var/www/html \
     && cp /usr/share/nginx/html/*.html /var/www/html/ \
     && chmod +x /usr/local/bin/docker-entrypoint \
-    && mv /tmp/nginx.conf /etc/nginx/nginx.conf
+    && mv /tmp/nginx.conf /etc/nginx/nginx.conf; \
+    mkdir -p /var/log/nginx
 
 WORKDIR /var/www/html
 
