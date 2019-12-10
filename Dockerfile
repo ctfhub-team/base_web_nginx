@@ -1,6 +1,6 @@
 FROM nginx:1.16.1-alpine
 
-LABEL Organization="CTFTraining" Author="Virink <virink@outlook.com>"
+LABEL Organization="CTFHUB" Author="Virink <virink@outlook.com>"
 
 COPY _file /tmp/
 
