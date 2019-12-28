@@ -1,0 +1,6 @@
+name: base_web_nginx
+title: 基础镜像 WEB Nginx
+desc: 基础镜像 WEB Nginx
+tags:
+  - web
+  - nginx
