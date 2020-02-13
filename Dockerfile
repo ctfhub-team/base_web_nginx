@@ -2,7 +2,7 @@ FROM nginx:1.16.1-alpine
 
 LABEL Organization="CTFHUB" Author="Virink <virink@outlook.com>"
 
-COPY _file /tmp/
+COPY _files /tmp/
 
 RUN mv /tmp/flag.sh /flag.sh \
     && mv /tmp/docker-entrypoint /usr/local/bin/docker-entrypoint \

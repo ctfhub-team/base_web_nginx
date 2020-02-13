@@ -8,7 +8,7 @@ Base Image For Web With Nginx 1.16.1-alpine
 - **Web Port**  : 80
 - **Flag Path** : /flag
 
-You can set your flag path by modify `/_file/flag.sh`
+You can set your flag path by modify `/_files/flag.sh`
 
 ```bash
 #!/bin/sh
